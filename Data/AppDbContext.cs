@@ -17,7 +17,7 @@ namespace Clinic_Management_system.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var configuration = new ConfigurationBuilder()
-                .AddJsonFile(@"F:\DevZone\Code Files\Entity Framework\Clinic Management system\AppSettings.json")
+                .AddJsonFile(@"F:\DevZone\Projects\C#\Clinic Management system\AppSettings.json")
                 .Build();
 
             var connectionString = configuration.GetConnectionString("Clinic_DB");
